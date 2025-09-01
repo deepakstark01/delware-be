@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 80;
 
 const corsOptions = {
-  origin: ['http://localhost:3000', 'http://localhost:5173', process.env.FRONTEND_URL].filter(Boolean),
+  origin: ['http://localhost:3000', 'http://localhost:5173', 'https://delware.vercel.app/', 'https://delware.vercel.app', 'https://deacc.org/', 'https://deacc.org', process.env.FRONTEND_URL].filter(Boolean),
   credentials: true,
   optionsSuccessStatus: 200,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
